@@ -19,6 +19,8 @@ public class Deck {
         }
     }
 
+
+
     public int getSize(){
         return size;
     }
@@ -26,6 +28,14 @@ public class Deck {
     public void printDeck(){
         for(Card card: cards) {
             System.out.println(card.getName());
+        }
+    }
+
+    public void shuffleCards(Card[] cards){
+        int cardsAmount = cards.length;
+
+        for(int i=0;i<cardsAmount;i++){
+            int random = i + (int)(Math.random()*(cardsAmount-i));
         }
     }
 
